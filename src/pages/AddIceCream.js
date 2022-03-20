@@ -36,7 +36,9 @@ export default function AddIceCream() {
     } 
     return (
         <div>
-            <form onSubmit={hendleButton}>
+            <form className="form" onSubmit={hendleButton}>
+
+                <h2>Add Ice-Cream</h2>
 
                 <label>Write title</label>
                 <input type="text" id="title" value={title} onChange={(e) => {setTitle(e.target.value)}}/>
@@ -47,7 +49,7 @@ export default function AddIceCream() {
                 <label>Price</label>
                 <input type="text" id="price" value={price} onChange={(e) => {setPrice(e.target.value)}}/>
 
-                <button type="submit">Add post</button>
+                <button type="submit" className="link">Add post</button>
             </form>
         </div>
     )
